@@ -18,11 +18,8 @@ class CustomCircleButton extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPressed,
       style: OutlinedButton.styleFrom(
-        shape: CircleBorder(
-          side: BorderSide(
-            color: AppColors.primary90,
-          ),
-        ),
+        side: BorderSide(color: AppColors.primary90),
+        shape: CircleBorder(),
       ),
       child: SvgPicture.asset(
         icon,
