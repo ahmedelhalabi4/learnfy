@@ -11,8 +11,7 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.white,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor:AppColors.primary90, // Button color
-        foregroundColor:AppColors.white,  // Text color
+        backgroundColor: AppColors.primary90, // Button color
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15), // Pill shape
         ),
@@ -20,18 +19,14 @@ class AppTheme {
           vertical: 16,
           horizontal: 24,
         ),
-        elevation: 5,
-        shadowColor: Colors.grey,
+        elevation: 0.0,
       ),
     ),
 
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: AppColors.black5,
-      contentPadding: EdgeInsets.symmetric(
-        horizontal: 24,
-        vertical: 16
-      ),
+      contentPadding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12.0),
         borderSide: BorderSide(color: AppColors.black10, width: 1.0),
