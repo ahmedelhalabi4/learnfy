@@ -94,7 +94,7 @@ class TestsTab extends StatelessWidget {
                         ),
                         Spacer(),
                         CustomCircleButton(
-                          icon: Assets.downloadIcon,
+                          icon: Assets.likeIcon,
                           onPressed: () {},
                         ),
                       ],

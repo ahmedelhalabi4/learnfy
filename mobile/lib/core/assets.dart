@@ -15,4 +15,5 @@ class Assets {
   static const String arrowBackIcon = '$_icons/arrow_black.svg';
   static const String downloadIcon = '$_icons/download.svg';
   static const String loveIcon = '$_icons/love.svg';
+  static const String likeIcon = '$_icons/like.svg';
 }
