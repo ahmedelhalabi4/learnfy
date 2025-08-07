@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learnfy/core/routing/app_routes.dart';
-import 'package:learnfy/features/auth/presentation/widgets/primary_button.dart';
+import 'package:learnfy/features/auth/presentation/views/sign_up_view.dart';
+import '../../../../core/widgets/primary_button.dart';
 import '../manager/on_boarding_cubit/on_boarding_cubit.dart';
 import '../manager/on_boarding_cubit/on_boarding_state.dart';
 import '../widgets/onboarding_dummy.dart';
@@ -81,7 +81,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * .67,
                     child: PrimaryButton(
-                      text: 'Next',
+                      label: 'Next',
                       onPressed: () {
                         if (state.isLastPage) {
                           _navigateToLecture(context);
@@ -107,9 +107,9 @@ class _OnboardingViewState extends State<OnboardingView> {
   }
 
   void _navigateToLecture(BuildContext context) {
-    Navigator.pushReplacementNamed(
+    Navigator.push(
       context,
-      AppRoutes.register,
+      MaterialPageRoute(builder: (context) => SignUpView()),
     );
   }
 }

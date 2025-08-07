@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnfy/core/theme/app_colors.dart';
+import 'package:learnfy/core/theme/app_text_styles.dart';
 
 class AppTheme {
   static ThemeData lightMode = ThemeData.light().copyWith(
@@ -42,6 +43,20 @@ class AppTheme {
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(color: AppColors.primary90, width: 2.0),
         borderRadius: BorderRadius.circular(12.0),
+      ),
+    ),
+    tabBarTheme: TabBarThemeData(
+      dividerColor: AppColors.black5,
+      dividerHeight: 2.0,
+      indicatorColor: AppColors.primary90,
+      indicatorSize: TabBarIndicatorSize.tab,
+      labelStyle: AppTextStyles.heading6,
+      unselectedLabelStyle: AppTextStyles.bodyLargeMedium,
+      indicator: BoxDecoration(
+        color: AppColors.white,
+        border: Border(
+          bottom: BorderSide(color: AppColors.primary90, width: 2.0),
+        ),
       ),
     ),
   );
