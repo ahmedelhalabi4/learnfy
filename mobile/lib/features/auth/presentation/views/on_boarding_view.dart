@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learnfy/features/auth/presentation/views/sign_up_view.dart';
+import 'package:learnfy/features/auth/presentation/views/sign_up_page.dart';
 import '../../../../core/widgets/primary_button.dart';
 import '../manager/on_boarding_cubit/on_boarding_cubit.dart';
 import '../manager/on_boarding_cubit/on_boarding_state.dart';
@@ -109,7 +109,7 @@ class _OnboardingViewState extends State<OnboardingView> {
   void _navigateToLecture(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SignUpView()),
+      MaterialPageRoute(builder: (context) => SignUpPage()),
     );
   }
 }
